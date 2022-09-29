@@ -1,0 +1,9 @@
+% 读取文件，读取体素数据
+nii_file = spm_vol('TOF.nii');
+data = spm_read_vols(nii_file);
+figure, imshow3D(data);
+
+% 读取DICOM文件
+nii_file = spm_vol('TOF.nii');
+data = spm_read_vols(nii_file);
+figure, imshow3D(data);
